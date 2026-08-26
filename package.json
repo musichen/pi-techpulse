@@ -1,11 +1,28 @@
 {
   "name": "pi-techpulse",
   "version": "0.1.0",
-  "description": "Native Pi extension for configurable technology trend digests",
+  "description": "Native Pi extension for configurable technology news and trend digests",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musichen/pi-techpulse.git"
+  },
+  "homepage": "https://github.com/musichen/pi-techpulse#readme",
+  "bugs": {
+    "url": "https://github.com/musichen/pi-techpulse/issues"
+  },
   "type": "module",
-  "keywords": ["pi-package", "pi-extension", "tech-news", "agents"],
-  "pi": { "extensions": ["./.pi/extensions/techpulse.ts"] },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "tech-news",
+    "agents"
+  ],
+  "pi": {
+    "extensions": [
+      "./.pi/extensions/techpulse.ts"
+    ]
+  },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
     "@earendil-works/pi-ai": "*",
