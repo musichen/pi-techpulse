@@ -35,6 +35,20 @@ Copy or create `config/sources.json` in the project where Pi runs. Each source h
 
 The cache is stored in the project at `.pi/techpulse-cache.json` so it is local, inspectable, and easy to back up. Add it to `.gitignore` if it should remain private.
 
+## Example config
+
+The bundled defaults in `config/sources.json` are:
+
+```json
+[
+  {"name":"Hacker News","type":"hacker_news","url":"https://hacker-news.firebaseio.com/v0/topstories.json","limit":30},
+  {"name":"GitHub Trending","type":"github_trending","url":"https://github.com/trending","limit":20},
+  {"name":"TechCrunch","type":"rss","url":"https://techcrunch.com/feed/","limit":20}
+]
+```
+
+Copy that shape into `config/sources.json` in your project and set `enabled` to `false` on any source you want to pause.
+
 ## Distribution
 
 This is a dependency-light Pi package: its runtime uses Node built-ins and Pi's extension APIs. No Python, external service, API key, or database server is required.
