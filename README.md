@@ -38,3 +38,7 @@ The cache is stored in the project at `.pi/techpulse-cache.json` so it is local,
 ## Distribution
 
 This is a dependency-light Pi package: its runtime uses Node built-ins and Pi's extension APIs. No Python, external service, API key, or database server is required.
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE).
